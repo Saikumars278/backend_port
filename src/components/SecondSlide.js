@@ -55,11 +55,11 @@ const About = () => {
 
           <div className="about-highlight">
             <div>
-              <h3>2+</h3>
+              <h3>1</h3>
               <span>Years Experience</span>
             </div>
             <div>
-              <h3>20+</h3>
+              <h3>2</h3>
               <span>Projects Designed</span>
             </div>
           </div>
