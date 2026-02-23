@@ -1,0 +1,76 @@
+/* DASHBOARD DESIGN */
+.dash {
+  padding: 100px 5%;
+  background-color: var(--bg-secondary);
+  text-align: center;
+}
+
+.dash h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  background: linear-gradient(to right, #00dbde, #fc00ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dash-desc {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dash-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 28px;
+  padding: 40px;
+  transition: var(--transition);
+}
+
+.dash-card:hover {
+  transform: translateY(-10px);
+  border-color: #fc00ff;
+}
+
+.dash-card h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.dash-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .dash {
+    padding: 60px 5%;
+  }
+
+  .dash h2 {
+    font-size: 2.2rem;
+  }
+
+  .dash-desc {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .dash-card {
+    padding: 24px;
+  }
+}
